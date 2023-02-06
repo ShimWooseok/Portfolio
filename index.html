@@ -5,19 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하늘 동영상 테스트</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- 제이쿼리 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- 테일윈드 -->
         <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/script.js"></script>
+    
 </head>
 <body>
-    <div class="wrapper bg-[#ffa]">
-        <div class="section-bg ">
-            <video class="video-test " autoplay loop muted >
-                <source src="./video/sky.mp4">
-              </video>
+    <div class="wrapper ">
+        <div class="top-bar">
+            <div class="con">
+                <div class="img-box">
+                    <img src="./img/Logo.png" alt="">
+                </div>
+                <div class="nav-box">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="section"></div>
+        <!-- 메인 배너 배경 --> 
+        <div class="section-bg ">
+            <video class="video-test" autoplay loop muted >
+                <source src="./video/sky.mp4">
+                
+              </video>
+              <div class="banner-box row">
+                <div class="txt-box">
+                <p>Enjoy Challenge</p>
+                </div>
+              </div>
+              
+        </div>
+        <!-- about -->
+        <div class="section section01">
+            <div class="about-wrap">
+                <div class="title">
+                    <P>ABOUT ME</P>
+                </div>
+                <div class="max-width-1560 row">  
+                    <div class="photo-box cell">
+                        <div class="blue-box">
+
+                        </div>
+                        <div class="photo">
+                            <img src="./img/프사.png" alt="">
+                        </div>
+                    </div>
+                    <div class="txt-box cell-r row">
+                        <div class="txt left-box cell ">
+                            <div class="box box1 row">
+                                <div class="title-box">
+                                    <div class="icon">
+                                        <img src="./img/프로필아이콘.png" alt="">
+                                    </div>
+                                    <div class="txt-title">
+                                        Profile
+                                    </div>
+                                </div>
+                                <div class="semi-title cell">
+                                    <p>이름</p>
+                                    <p>생년월일</p>
+                                    <p>지역</p>
+                                </div>
+                                <div class="content cell">
+                                    <p>심우석</p>
+                                    <p>1997.12.13</p>
+                                    <p>대전광역시 서구 갈마동</p>
+                                </div>
+                            </div>
+                            <div class="box box2 row">
+                                <div class="title-box">
+                                    <div class="icon">
+                                        <img src="./img/프로필아이콘.png" alt="">
+                                    </div>
+                                    <div class="txt-title">
+                                        Contact
+                                    </div>
+                                </div>
+                                <div class="semi-title semi-title2 cell">
+                                    <p>Tel</p>
+                                    <p>E-mail</p>
+                                    
+                                </div>
+                                <div class="content content2 cell">
+                                    <p>010 - 3847 - 8914</p>
+                                    <p>zaqplm7913@naver.com</p>
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="txt right-box cell">
+                                <div class="box box1 row ">
+                                    <div class="title-box">
+                                        <div class="icon">
+                                            <img src="./img/라이센스아이콘.png" alt="">
+                                        </div>
+                                        <div class="txt-title ">
+                                            License
+                                        </div>
+                                    </div>
+                                    <div class="semi-title2 cell ">
+                                        <p>2016. 03. 29</p>
+                                        <p>2021. 03. 15</p>
+                                        <p>2021. 07. 30</p>
+                                        <p>2022. 09. 21</p>
+                                    </div>
+                                    <div class="content cell ">
+                                        <p>1종보통 운전면허증</p>
+                                        <p>ITQ OA MASTER</p>
+                                        <p>컴퓨터활용능력 2급</p>
+                                        <p>웹디자인 기능사 필기</p>
+                                    </div>
+                                </div>
+                                <div class="box box2 row ">
+                                    <div class="title-box">
+                                        <div class="icon">
+                                            <img src="./img/프로필아이콘.png" alt="">
+                                        </div>
+                                        <div class="txt-title">
+                                            Contact
+                                        </div>
+                                    </div>
+                                    <div class="semi-title semi-title2 cell">
+                                        <p>2021. 12. 04</p>
+                                    </div>
+                                    <div class="content  cell ">
+                                        <p>SBS아카데미컴퓨터아트학원</p>
+                                    </div>
+                                </div>                            
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
