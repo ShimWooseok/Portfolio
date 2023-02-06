@@ -1,347 +1,452 @@
 /* 노멀라이징 */
 * {
-    padding: 0;
-    margin: 0;
-  }
-  body{
-    color : #333333;
-    font-family: 'NotoSansKR-Regular';
-    font-family: 'Montserrat-Regular';
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  ul,
-  li {
-    list-style: none;
-  }
-  
-  /*라이브러리*/
-  .cell {
-    float: left;
-  }
-  .cell-r{
-    float : right;
-  }
-  .row::after {
-    clear: both;
-    content: "";
-    display: block;
-  }
-  
-  ul, li{
-    margin: 0;
-    padding: 0;
-  }
-  
-  .con{
-    max-width : 1200px;
-    margin : 0 auto; 
-  }
-  .section .title{
-    font-size: 128px;
-    color: #93C6E7;
-    letter-spacing: -0.055em;
-    font-family: 'Montserrat-ExtraBoldItalic';
-    padding-left: 50px;
-  }
-  /* 폰트 */
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #333333;
+  font-family: "NotoSansKR-Regular";
+  font-family: "Montserrat-Regular";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/*라이브러리*/
+.cell {
+  float: left;
+}
+.cell-r {
+  float: right;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.con {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section .title {
+  font-size: 128px;
+  color: #93c6e7;
+  letter-spacing: -0.055em;
+  font-family: "Montserrat-ExtraBoldItalic";
+  padding-left: 50px;
+}
+/* 폰트 */
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('../font/Montserrat-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat-Regular";
+  src: url("../font/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat-Semibold';
-    src: url('../font/Montserrat-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat-Semibold";
+  src: url("../font/Montserrat-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat-ExtraBoldItalic';
-    src: url('../font/Montserrat-ExtraBoldItalic.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat-ExtraBoldItalic";
+  src: url("../font/Montserrat-ExtraBoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat-Medium';
-    src: url('../font/Montserrat-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat-Medium";
+  src: url("../font/Montserrat-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../font/Montserrat-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat-Bold";
+  src: url("../font/Montserrat-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansKR-Medium';
-    src: url('../font/NotoSansKR-Medium.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NotoSansKR-Medium";
+  src: url("../font/NotoSansKR-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansKR-Bold';
-    src: url('../font/NotoSansKR-Bold.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NotoSansKR-Bold";
+  src: url("../font/NotoSansKR-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansKR-Regular';
-    src: url('../font/NotoSansKR-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NotoSansKR-Regular";
+  src: url("../font/NotoSansKR-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 /* 스타일 */
-.wrapper{
-    position: relative;
+.wrapper {
+  position: relative;
 }
-.wrapper > .top-bar{
-    position: fixed;
-    top : 0;
-    left : 0;
-    z-index: 99;
-    width: 100%;
-    height: 80px;
-    transition: 0.3s;
-    color : #fff;
-}
-
-.wrapper > .top-bar.active{
-    background-color: #fff;
-    box-shadow: 0 1px 10px rgba(116,116,116,0.25);
-    color : #333333;
-}
-.wrapper > .top-bar > .con{
-    height: 100%;
-    box-sizing: border-box;
-    padding : 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.wrapper > .top-bar > .con > .nav-box > ul{
-    display: flex;
-    gap : 40px;
-    font-size: 20px;
-    font-family: 'Montserrat-Medium';
+.wrapper > .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  transition: 0.3s;
+  color: #fff;
 }
 
-.wrapper > .top-bar > .con > .nav-box > ul > li{
-    padding: 10px 0;
+.wrapper > .top-bar.active {
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(116, 116, 116, 0.25);
+  color: #333333;
 }
-.wrapper > .top-bar > .con > .nav-box > ul > li > a{
-    padding: 10px 0;
+.wrapper > .top-bar > .con {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.wrapper > .top-bar > .con > .nav-box > ul > li.active > a{
-    color : #AEE2FF;
-    font-family: 'Montserrat-Bold';
-    border-bottom: 3px solid #AEE2FF;
+.wrapper > .top-bar > .con > .nav-box > ul {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  font-family: "Montserrat-Medium";
 }
-.wrapper > .top-bar > .con > .nav-box > ul > li > a{
 
+.wrapper > .top-bar > .con > .nav-box > ul > li {
+  padding: 10px 0;
 }
-.wrapper >.section-bg{
-    position: relative;
-    padding-top: 50.91%;
+.wrapper > .top-bar > .con > .nav-box > ul > li > a {
+  padding: 10px 0;
 }
-.wrapper > .section-bg::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top : 0;
-    background-color: #fff;
-    opacity: 0.6;
-    z-index: 0;
+.wrapper > .top-bar > .con > .nav-box > ul > li.active > a {
+  color: #aee2ff;
+  font-family: "Montserrat-Bold";
+  border-bottom: 3px solid #aee2ff;
 }
-.wrapper > .section-bg > .video-test{
-    position: absolute;
-    top : 0;
-    left : 0;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
+.wrapper > .top-bar > .con > .nav-box > ul > li > a {
 }
-.wrapper >.section-bg > .banner-box{
-    /* width: calc(100% - 400px);
+.wrapper > .section-bg {
+  position: relative;
+  padding-top: 50.91%;
+}
+.wrapper > .section-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.6;
+  z-index: 0;
+}
+.wrapper > .section-bg > .video-test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper > .section-bg > .banner-box {
+  /* width: calc(100% - 400px);
     height: calc(100% - 200px); */
-    width: 100%;
-    height: 100%;
-    z-index: 98;
-    position: absolute;
-    top : 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/나노렴.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/나노렴.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrapper >.section-bg > .banner-box > .txt-box{
-    position: relative;
+.wrapper > .section-bg > .banner-box > .txt-box {
+  position: relative;
 }
-.wrapper >.section-bg > .banner-box > .txt-box::after{
-    content: "항상 즐기며 나아가는";
-    text-shadow: 0 4px 10px rgba(62, 61, 61, 0.25);
-    font-family: 'NotoSansKR-Medium';
-    font-size: 24px;
-    color: #fff;;
-    position: absolute;
-    top : -1%;
-    left : 0.8%;
-
+.wrapper > .section-bg > .banner-box > .txt-box::after {
+  content: "항상 즐기며 나아가는";
+  text-shadow: 0 4px 10px rgba(62, 61, 61, 0.25);
+  font-family: "NotoSansKR-Medium";
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: -1%;
+  left: 0.8%;
 }
-.wrapper >.section-bg > .banner-box > .txt-box >p{
-    color :#fff;
-    font-size: 128px;
-    transition: 0.3s;
-    font-family: 'Montserrat-Bold';
-    text-shadow: 0px 4px 10px rgba(62, 61, 61, 0.25);
-    position: re;
+.wrapper > .section-bg > .banner-box > .txt-box > p {
+  color: #fff;
+  font-size: 128px;
+  transition: 0.3s;
+  font-family: "Montserrat-Bold";
+  text-shadow: 0px 4px 10px rgba(62, 61, 61, 0.25);
+  position: re;
 }
-.wrapper > .section01{
-    width: 100%;
-    padding-top: 175px;
-    padding-bottom: 80px;
+.wrapper > .section01 {
+  width: 100%;
+  padding-top: 175px;
+  padding-bottom: 80px;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560{
-    max-width: 81.25%;
-
-
+.wrapper > .section01 > .about-wrap > .max-width-1560 {
+  max-width: 95.2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box{
-    width: 46.7%;
-    position: relative;
-}
-
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .photo{
-    width: 50%;
-    height: 465px;
-    position: absolute;
-    right : 0;
-    top : 50%;
-    transform: translateY(-50%);
+.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
+  width: 46.1%;
+  position: relative;
 }
 
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .photo > img{
-    width: 100%;
-    height: 100%;   
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .photo-box
+  > .photo
+  > img {
+  width: 100%;
+  height: 100%;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box{
-    width: 92.7%;
-    height: 537px;
-    background-color: #AEE2FF;
+.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box {
+  width: 92.7%;
+  height: 537px;
+  background-color: #aee2ff;
+  position: relative;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box{
-    width: 728px;
-    height: 537px;
-    padding-top : 74px;
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .photo-box
+  > .blue-box::after {
+  content: "";
+  width: 364px;
+  height: 465px;
+  background-color: #fdd;
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  background-image: url(../img/프사.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt{
-    width: 50%;
-    height: 100%;
+.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box {
+  width: 846px;
+  height: 537px;
+  padding-top: 74px;
 }
-
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt  .title-box{
-    display: flex;
-    align-items: center;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt  .title-box > .txt-title{
-    font-size: 24px;
-    color : #545454;
-    font-family: 'Montserrat-Semibold';
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt .semi-title{
-    font-size: 18px;
-    margin-top: 20px;
-    width: 30%;
-    color : #545454;
-    font-family: 'NotoSansKR-Medium';
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt p{
-    margin-bottom: 14px;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt  .content{
-    font-size: 18px;
-    margin-top: 20px;
-    color : #545454;
-    font-family: 'NotoSansKR-Medium';
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .left-box{
-
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt > .box1{
-    width: 100%;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt > .box2{
-    width: 100%;
-    margin-top: 50px;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt  .semi-title2{
-    font-family: 'Montserrat-Semibold';
-    font-size: 18px;
-    margin-top: 20px;   
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt  .content2{
-    font-family: 'Montserrat-Semibold';
+.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt {
+  width: 50%;
+  height: 100%;
 }
 
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  .title-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  .title-box
+  > .txt-title {
+  font-size: 24px;
+  color: #545454;
+  font-family: "Montserrat-Semibold";
+}
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  .semi-title {
+  font-size: 18px;
+  margin-top: 20px;
+  width: 30%;
+  color: #545454;
+  font-family: "NotoSansKR-Medium";
+}
+.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt p {
+  margin-bottom: 14px;
+}
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  .content {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #545454;
+  font-family: "NotoSansKR-Medium";
+}
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  > .box1 {
+  width: 100%;
+}
+.wrapper
+  > .section01
+  > .about-wrap
+  > .max-width-1560
+  > .txt-box
+  > .txt
+  > .box2 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* top-btn */
+.top-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 999px;
+  box-shadow: 0px 4px 20px rgba(143, 143, 143, 0.25);
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* 반응형 미디어 쿼리 */
 
 /* 1600px 이하 */
-@media screen and (max-width: 1600px){
-    .wrapper >.section-bg > .banner-box > .txt-box >p{
-        font-size: 96px;
-    }
-    
-.wrapper >.section-bg > .banner-box > .txt-box::after{
+@media screen and (max-width: 1670px) {
+  .wrapper > .section-bg > .banner-box > .txt-box > p {
+    font-size: 96px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box::after {
     font-size: 16px;
-}
-}
+  }
+  .wrapper > .section01 > .about-wrap > .max-width-1560 {
+    max-width: 100%;
+  }
 
+  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
+    width: 50%;
+  }
+
+  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1600px) {
+}
 
 /* 1300px 이하 */
-@media screen and (max-width: 1300px){
-    .wrapper > .top-bar > .con > .nav-box > ul{
-        font-size: 18px;
-    }
-    .wrapper >.section-bg > .banner-box > .txt-box >p{
-        font-size: 64px;
-    }
-    .wrapper >.section-bg > .banner-box > .txt-box::after{
-        font-size: 14px;
-    }
-}
+@media screen and (max-width: 1300px) {
+  .wrapper > .top-bar > .con > .nav-box > ul {
+    font-size: 18px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box > p {
+    font-size: 64px;
+  }
 
+  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
+    width: 100%;
+  }
+
+  .wrapper
+    > .section01
+    > .about-wrap
+    > .max-width-1560
+    > .photo-box
+    > .blue-box {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .wrapper
+    > .section01
+    > .about-wrap
+    > .max-width-1560
+    > .photo-box
+    > .blue-box::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box::after {
+    font-size: 14px;
+  }
+  .section .title {
+    font-size: 96px;
+    text-align: center;
+    padding: 0;
+  }
+}
 
 /* 769px 이하 */
 @media screen and (max-width: 769px) {
-    .wrapper > .top-bar{
-        height: 60px;
-    }
-    .wrapper > .top-bar > .con {
-        justify-content: center;
-    }
-    .wrapper > .top-bar > .con > .img-box{
-        display: none;
-    }
-    .wrapper > .top-bar > .con > .nav-box > ul{
-        font-size: 16px;
-    }
-    .wrapper >.section-bg > .banner-box > .txt-box >p{
-        font-size: 32px;
-    }
-    .wrapper >.section-bg > .banner-box > .txt-box::after{
-        font-size: 10px;
-        top : -10%;
-    }
+  .section .title {
+    font-size: 64px;
   }
+  .wrapper > .top-bar {
+    height: 60px;
+  }
+  .wrapper > .top-bar > .con {
+    justify-content: center;
+  }
+  .wrapper > .top-bar > .con > .img-box {
+    display: none;
+  }
+  .wrapper > .top-bar > .con > .nav-box > ul {
+    font-size: 16px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box > p {
+    font-size: 32px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box::after {
+    font-size: 10px;
+    top: -10%;
+  }
+
+  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt {
+  }
+}
