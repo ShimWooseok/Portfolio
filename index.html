@@ -1,21 +1,47 @@
+<!--
+ 1. 반응형 디자인 후 반응형 이어서 구현
+  - 360사이즈 추가해서 구현
+  - 스킬 반응형 되었을때 디자인
+  - 어바웃미 반응형 되었을때 디자인
+  - 클론코딩 반응형 되었을때 디자인
+1440 px
+1224 큰테블릿
+768 중간 사이즈 태블릿
+360*660 가장 작은 모바일 사이즈
+ 
+  2. 고정형 디자인
+   - 코딩에서 반응형 코드 제외
+  
+ 공통
+스킬 디자인 수정하기
+-->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하늘 동영상 테스트</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>포폴</title>
 
-        <!-- 제이쿼리 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- 테일윈드 -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+        
+        <!-- 스와이퍼 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <!-- circle-progress 불러오기 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+        <!-- 테일윈드 -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="./java.js"></script>
+
     
 </head>
 <body>
@@ -38,12 +64,13 @@
         <!-- 메인 배너 배경 --> 
         <div class="section-bg ">
             <video class="video-test" autoplay loop muted >
-                <source src="./video/sky.mp4">
+                <source src="./video/fly2.mp4">
                 
               </video>
-              <div class="banner-box row">
+              <div class="banner-box">
                 <div class="txt-box">
-                <p>Enjoy Challenge</p>
+                <span>always</span>
+                <span>Try</span>
                 </div>
               </div>
               
@@ -52,16 +79,13 @@
         <div class="section section01">
             <div class="about-wrap">
                 <div class="title">
-                    <P>ABOUT ME</P>
+                    <P>ABOUT</P>
                 </div>
                 <div class="max-width-1560">  
                     <div class="photo-box ">
                         <div class="blue-box">
 
                         </div>
-                        <!-- <div class="photo">
-                            <img src="./img/프사.png" alt="">
-                        </div> -->
                     </div>
                     <div class="txt-box  row">
                         <div class="txt left-box  cell ">
@@ -217,71 +241,111 @@
                 SKILL
             </div>
             <div class="con">
+
                 <div class="content-wrap ">
-                    <div class="content ">
-                        <div class="content-box">
-                            <div class="circle circle01">
-                                <div class="percent"></div>
-                              </div>
-                              <div class="txt-box">
-                                <p>Photoshop</p>
-                                <p>75%</p>
-                              </div>
-
+                    <div class="img-box">
+                        <img src="./img/프사2.png" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="./img/포토샵 아이콘.png" alt="">
+                            </div>
+                            <div class="progress">
+                                <div class="title-box">
+                                    Photoshop
+                                </div>
+                                <ul class="skill">
+                                    <li class="flex">
+                                        <div class="progress-bar-box progress-bar-box-75"></div>
+                                        <span class="progress-num-75"></span>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="txt">간단한 이미지 합성과 인물 보정, 편집작업이 가능합니다.</div>
+                            </div>
                         </div>
-                        
+                        <div class="content">
+                            <div class="icon">
+                                <img src="./img/일러스트 아이콘.png" alt="">
+                            </div>
+                            <div class="progress">
+                                <div class="title-box">
+                                    Illustlator
+                                </div>
+                                <ul class="skill">
+                                    <li class="flex">
+                                        <div class="progress-bar-box progress-bar-box-75"></div>
+                                        <span class="progress-num-75"></span>
+                                    </li>
+                                </ul>
+                                <div class="txt">간단한 이미지 합성과 인물 보정, 편집작업이 가능합니다.</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icon">
+                                <img src="./img/vsCode아이콘.png" alt="">
+                            </div>
+                            <div class="progress">
+                                <div class="title-box">
+                                    Visual Studio Code
+                                </div>
+                                <ul class="skill">
+                                    <li class="flex">
+                                        <div class="progress-bar-box progress-bar-box-90"></div>
+                                        <span class="progress-num-90"></span>
+                                    </li>
+                                </ul>
+                                <div class="txt">간단한 이미지 합성과 인물 보정, 편집작업이 가능합니다.</div>
+                                </div>
+                        </div>
+                        <div class="content">
+                            <div class="icon">
+                                <img src="./img/피그마 아이콘.png" alt="">
+                            </div>
+                            <div class="progress">
+                                <div class="title-box">
+                                    Figma
+                                </div>
+                                <ul class="skill">
+                                    <li class="flex">
+                                        <div class="progress-bar-box progress-bar-box-90"></div>
+                                        <span class="progress-num-90"></span>
+                                    </li>
+                                </ul>
+                                <div class="txt">간단한 이미지 합성과 인물 보정, 편집작업이 가능합니다.</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icon">
+                                <img src="./img/인디자인아이콘.png" alt="">
+                            </div>
+                            <div class="progress">
+                                <div class="title-box">
+                                    Indesign
+                                </div>
+                                <ul class="skill">
+                                    <li class="flex">
+                                        <div class="progress-bar-box progress-bar-box-50"></div>
+                                        <span class="progress-num-50"></span>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="txt">간단한 이미지 합성과 인물 보정, 편집작업이 가능합니다.</div>
+                            </div>
+                        </div>
+                        </div>
 
                     </div>
-                    <div class="content ">
-                        <div class="content-box">
-                            <div class="circle circle02">
-                                <div class="percent"></div>
-                              </div>
-                              <div class="txt-box">
-                                <p>Illustlator</p>
-                                <p>75%</p>
-                              </div>
-                              
-                        </div>
-
-                    </div>
-                    <div class="content ">
-                        <div class="content-box">
-                            <div class="circle circle03">
-                                <div class="percent"></div>
-                              </div>
-                              <div class="txt-box">
-                                <p>VsCode</p>
-                                <p>90%</p>
-                              </div>
-                              
-                        </div>
-
-                    </div>
-                    <div class="content ">
-                        <div class="content-box">
-                            <div class="circle circle04">
-                                <div class="percent"></div>
-                              </div>
-                              <div class="txt-box">
-                                <p>Figma</p>
-                                <p>90%</p>
-                              </div>
-
-                        </div>
-
-                    </div>
-
-
+                    
                 </div>
             </div>
             
-        </div>
 
         <!-- 포트폴리오 -->
         <div class="section section04">
             <div class="title">
-                Portfolio
+                PORTFOLIO
             </div>
             <div class="content">
                 <div class="img-box">
@@ -391,12 +455,174 @@
             </div>
         </div>
 
+        <!-- 클론코딩 -->
+        <div class="section section05">
+            <div class="title">
+                CLONE CODING
+            </div>
+            <div class="swiper-box-1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                        <div class="img-box">
+                            <img src="./img/NH이미지.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <div class="title-box">
+                               <span>NH Bank</span>
+                            </div>
+                            <div class="info-box">
+                                <div class="semi-title">
+                                    <p>작업</p>
+                                    <p>참여율</p>
+                                    <p>제작기간</p>
+                                </div>
+                                <div class="semi-txt">
+                                    <p>메인페이지 모작</p>
+                                    <p>100%</p>
+                                    <p>2022.05</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a  href="#">
+                            <div class="img-box">
+                                <img src="./img/집반찬연구소이미지.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <div class="title-box">
+                                   집반찬연구소
+                                </div>
+                                <div class="info-box">
+                                    <div class="semi-title">
+                                        <p>작업</p>
+                                        <p>참여율</p>
+                                        <p>제작기간</p>
+                                    </div>
+                                    <div class="semi-txt">
+                                        <p>메인페이지 모작</p>
+                                        <p>100%</p>
+                                        <p>2022.11</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="./img/롯데시네마이미지.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <div class="title-box">
+                                   롯데시네마
+                                </div>
+                                <div class="info-box">
+                                    <div class="semi-title">
+                                        <p>작업</p>
+                                        <p>참여율</p>
+                                        <p>제작기간</p>
+                                    </div>
+                                    <div class="semi-txt">
+                                        <p>메인페이지 모작</p>
+                                        <p>100%</p>
+                                        <p>2022.12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="w-[100%] h-[100%]" href="#">
+                            <div class="img-box">
+                                <img src="./img/Log이미지.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <div class="title-box">
+                                   <span>CLONE CODING LOG</span>
+                                </div>
+                                <div class="info-box">
+                                    <div class="semi-title">
+                                        <p>작업</p>
+                                        <p>참여율</p>
+                                        <p>제작기간</p>
+                                    </div>
+                                    <div class="semi-txt">
+                                        <p>메인페이지 모작</p>
+                                        <p>100%</p>
+                                        <p>2022.05</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="section section06">
+            <div class="contact">
+                <div class="title-box">
+                    CONTACT
+                </div>
+                <div class="info-box">
+                    <div class="input-box">
+                        <form action="">
+                            <input class="w-[400px] h-[40px] bg-[#DDDDDD]" type="text" placeholder="put your name address here" data-error="이름을 입력하세요" required> <br>
+                            <input class="w-[400px] h-[40px] bg-[#DDDDDD] mt-[16px]" type="text" placeholder="put your E-mail address here" data-error="이메일을 입력하세요" required>
+                            <textarea class="form-control" name="message" id="form_message" placeholder="text" data-error="내용을 적어주세요!" required></textarea> <br>
+                            <button>보내기</button>
+                        </form>
+                    </div>
+                    <div class="txt-box">
+                        <div class="email">
+                            <img src="./img/이메일아이콘.png" alt="">
+                            <p>zaqplm7913@naver.com</p>
+                        </div>
+                        <div class="phone">
+                            <img src="./img/휴대폰아이콘.png" alt="">
+                            <p>010 - 3847 - 8914</p>
+                        </div>
+                        <img src="./img/circle-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="con">
+                    <p class="mb-[12px]">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                    <div class="img-box mb-[12px]">
+                        <img src="./img/git이미지.png" alt="">
+                    </div>
+                    <p>© 2023 WooSeok. All Rights Reserved.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
             <div class="top-btn">
                 <img src="./img/top-btn.png" alt="">
             </div>
 
+
+
+
+
         </div>
-    </div>
+
 
 </body>
 </html>
