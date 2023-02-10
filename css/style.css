@@ -110,14 +110,12 @@ li {
   height: 80px;
   transition: 0.3s;
   color: #fff;
-  opacity: 0;
 }
 
 .wrapper > .top-bar.active {
   background-color: #fff;
   box-shadow: 0 1px 10px rgba(116, 116, 116, 0.25);
   color: #333333;
-  opacity: 1;
 }
 .wrapper > .top-bar > .con {
   height: 100%;
@@ -187,30 +185,32 @@ li {
 }
 .wrapper > .section-bg > .banner-box > .txt-box {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  color : #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
   vertical-align: top;
 }
-.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1){
+.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
   font-size: 96px;
   letter-spacing: 0.245em;
   margin-right: 50px;
   text-shadow: 0px 4px 10px rgba(62, 61, 61, 0.25);
 }
-.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2){
+.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2) {
   font-size: 128px;
   letter-spacing: 0.1em;
   font-weight: bold;
   margin-left: 50px;
   position: relative;
+  color: #fff;
 }
-.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2):after{
+.wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2):after {
   position: absolute;
-  top : 15%;
-  left : -10%;
-  width: 110%;
+  top: 15%;
+  left: -5%;
+  width: 105%;
   height: 85%;
-  background-color: #F5DC62;
+  background-color: #f5dc62;
+  background-color: #93c6e7;
   content: "";
   z-index: -1;
 }
@@ -386,78 +386,70 @@ li {
 }
 
 /* 수정 후 SKILL 섹션 */
-.wrapper > .section03 > .con > .content-wrap{
+.wrapper > .section03 > .con > .content-wrap {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
 }
 
-.wrapper > .section03 > .con > .content-wrap > .content-box{
-  padding: 36px 0;
+.wrapper > .section03 > .con > .content-wrap > .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.wrapper > .section03 > .con > .content-wrap > .content-box > .img-box{
+.wrapper > .section03 > .con > .content-wrap > .content-box > .img-box {
   max-width: 575px;
   height: 854px;
 }
-.wrapper > .section03 > .con > .content-wrap > .content-box > .img-box > img{
+.wrapper > .section03 > .con > .content-wrap > .content-box > .img-box > img {
   width: 100%;
   height: 100px;
 }
-.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .icon{
+.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .icon {
   padding-top: 6px;
 }
-.wrapper > .section03 > .con > .content-wrap > .content-box > .content{
+.wrapper > .section03 > .con > .content-wrap > .content-box > .content {
   display: flex;
   gap: 40px;
-  margin-bottom: 55px;
+  align-items: center;
 }
-.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .title-box{
-
+.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .title-box {
   font-family: "Montserrat-Bold";
   font-size: 20px;
 }
 
-.skill > li{
+.skill > li {
   align-items: center;
   gap: 18px;
 }
 .progress-bar-box {
-  width:378px;
-  height:18px;
+  width: 378px;
+  height: 18px;
   background-color: #d9d9d9;
   margin-top: 7px;
   margin-right: 10px;
 }
-.progress-bar-box::after{
-  content:"";
-  display:block;
-  height:100%;
-  width:0;
-  background-color:#aee2ff;
+.progress-bar-box::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: #aee2ff;
 }
 .skill.active .progress-bar-box-75::after {
-  width:75%;
-  transition:width 1s 1s;
+  width: 75%;
+  transition: width 1s 1s;
 }
 .skill.active .progress-bar-box-90::after {
-  width:90%;
-  transition:width 1s 1s;
+  width: 90%;
+  transition: width 1s 1s;
 }
 .skill.active .progress-bar-box-50::after {
-  width:50%;
-  transition:width 1s 1s;
+  width: 50%;
+  transition: width 1s 1s;
 }
 
-.progress-num-75::after {
-  content:"75";
-}
-.progress-num-90::after {
-  content:"90";
-}
-.progress-num-50::after {
-  content:"50";
-}
 @property --num-to-75 {
   syntax: "<integer>";
   initial-value: 0;
@@ -524,34 +516,17 @@ li {
   animation-fill-mode: both;
   counter-reset: num var(--num-to-50);
 }
-.progress-num-75::after {
-  content: counter(num);
-}
-.progress-num-90::after {
-  content: counter(num);
-}
-.progress-num-50::after {
-  content: counter(num);
+
+.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .progress-num-75 {
+  margin-top: 5px;
 }
 
-
-
-
-
-
-
-.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .progress-num-75{
-  margin-top : 5px;
-}
-
-.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .txt{
+.wrapper > .section03 > .con > .content-wrap > .content-box > .content > .progress > .txt {
   font-family: "NotoSansKR-Regular";
   font-size: 16px;
   letter-spacing: -0.055em;
-  margin-top: 30px;
+  margin-top: 20px;
 }
-
-
 
 .wrapper > .section04 {
   background-color: #f5f5f5;
@@ -657,7 +632,6 @@ li {
 .swiper-slide {
   max-width: 576px;
   height: 504px;
-  /* padding-bottom: 87.5%; */
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -739,23 +713,20 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation:fly 2.5s linear infinite;
+  animation: fly 3.5s linear infinite;
 }
 @keyframes fly {
-  
   /* 지워도 됩니다! 0% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
   0% {
-    
   }
-  
+
   /* 50% 일 때에는 margin-top이 30px이어야 한다! */
   50% {
-    margin-top:-15px;
+    margin-top: -15px;
   }
-  
+
   /* 지워도 됩니다! 100% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
   100% {
-    
   }
 }
 .wrapper > .section06 > .contact > .title-box {
@@ -764,78 +735,61 @@ li {
   text-align: center;
   letter-spacing: -1.5px;
 }
-.wrapper > .section06 > .contact > .info-box{
+.wrapper > .section06 > .contact > .info-box {
   width: 100%;
   box-sizing: border-box;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
-.wrapper > .section06 > .contact > .info-box > .input-box{
-  width: 48%; 
+.wrapper > .section06 > .contact > .info-box > .input-box {
+  width: 48%;
   padding-left: 127px;
 }
-.wrapper > .section06 > .contact > .info-box > .input-box > form > input{
+.wrapper > .section06 > .contact > .info-box > .input-box > form > input {
   border-radius: 10px;
   padding-left: 14px;
   box-sizing: border-box;
 }
-.wrapper > .section06 > .contact > .info-box > .input-box > form > textarea{
+.wrapper > .section06 > .contact > .info-box > .input-box > form > textarea {
   width: 400px;
   height: 350px;
   background-color: #ddd;
   border-radius: 10px;
-  resize:none ;
+  resize: none;
   margin-top: 16px;
   box-sizing: border-box;
   padding: 9px 0 0 14px;
 }
-.wrapper > .section06 > .contact > .info-box > .input-box > form > button{
+.wrapper > .section06 > .contact > .info-box > .input-box > form > button {
   padding: 12px 38px;
   background-color: #93c6e7;
   border-radius: 30px;
   margin-top: 16px;
-  color : #fff;
+  color: #fff;
   font-size: 16px;
   font-family: "NotoSansKR-Regular";
 }
-.wrapper > .section06 > .contact > .info-box > .txt-box{
+.wrapper > .section06 > .contact > .info-box > .txt-box {
   width: 48%;
 }
-.wrapper > .section06 > .contact > .info-box > .txt-box > div{
+.wrapper > .section06 > .contact > .info-box > .txt-box > div {
   display: flex;
   gap: 10px;
   align-items: center;
   font-size: 24px;
   margin-bottom: 16px;
-
 }
-.wrapper > .section06 > .contact > .info-box > .txt-box > img{
-  animation-name : rotate;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.wrapper > .section06 > .contact > .info-box > .txt-box > img {
   margin-top: 30px;
 }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 
 .wrapper > .section06 > .footer {
   width: 100%;
   text-align: center;
   margin-top: 108px;
 }
-.wrapper > .section06 > .footer > .con > .img-box{
+.wrapper > .section06 > .footer > .con > .img-box {
   display: inline-block;
 }
 
@@ -854,6 +808,10 @@ li {
   align-items: center;
   justify-content: center;
   z-index: 99;
+  opacity: 0;
+}
+.top-btn.active {
+  opacity: 1;
 }
 
 /* 반응형 미디어 쿼리 */
@@ -878,8 +836,16 @@ li {
     margin: 0 auto;
   }
 } */
-/* 1600px 이하 */
+/* 1440px 이하 */
 @media screen and (max-width: 1440px) {
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
+    font-size: 64px;
+    margin-right: 40px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2) {
+    font-size: 96px;
+    margin-right: 40px;
+  }
   .wrapper > .section02 > .con {
     max-width: 1080px;
   }
@@ -942,13 +908,18 @@ li {
   }
 }
 
-/* 1300px 이하 */
+/* 1224px 이하 */
 @media screen and (max-width: 1224px) {
   .wrapper > .top-bar > .con > .nav-box > ul {
     font-size: 18px;
   }
-  .wrapper > .section-bg > .banner-box > .txt-box > p {
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
+    font-size: 48px;
+    margin-right: 30px;
+  }
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2) {
     font-size: 64px;
+    margin-left: 30px;
   }
 
   .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
@@ -1078,12 +1049,13 @@ li {
     font-size: 16px;
   }
 
-  .wrapper > .section-bg > .banner-box > .txt-box > p {
-    font-size: 32px;
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
+    font-size: 36px;
+    margin-right: 15px;
   }
-  .wrapper > .section-bg > .banner-box > .txt-box::after {
-    font-size: 10px;
-    top: -10%;
+  .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(2) {
+    font-size: 48px;
+    margin-left: 15px;
   }
   .wrapper > .section01 {
     padding-bottom: 0;
