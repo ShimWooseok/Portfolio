@@ -5,8 +5,7 @@
 }
 body {
   color: #333333;
-  font-family: "NotoSansKR-Regular";
-  font-family: "Montserrat-Regular";
+  font-family:  'Montserrat-Regular', 'NotoSansKR-Regular';
 }
 a {
   color: inherit;
@@ -41,19 +40,16 @@ li {
   max-width: 1200px;
   margin: 0 auto;
 }
-.section .title {
-  font-size: 128px;
-  color: #93c6e7;
-  letter-spacing: -0.055em;
-  font-family: "Montserrat-ExtraBoldItalic";
-  padding-left: 50px;
-}
+
 /* 폰트 */
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("../font/Montserrat-Regular.ttf");
   font-weight: normal;
   font-style: normal;
+  unicode-range:  U+0041-005A ;
+  unicode-range: U+0061-007A ;
+
 }
 @font-face {
   font-family: "Montserrat-Semibold";
@@ -96,6 +92,8 @@ li {
   src: url("../font/NotoSansKR-Regular.otf");
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+AC00-D7A3;
+
 }
 /* 스타일 */
 .wrapper {
@@ -110,6 +108,7 @@ li {
   height: 80px;
   transition: 0.3s;
   color: #fff;
+  opacity: 0.9;
 }
 
 .wrapper > .top-bar.active {
@@ -156,7 +155,7 @@ li {
   position: absolute;
   top: 0;
   background-color: #fff;
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: 0;
 }
 .wrapper > .section-bg > .video-test {
@@ -184,10 +183,8 @@ li {
   align-items: center;
 }
 .wrapper > .section-bg > .banner-box > .txt-box {
-  position: relative;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  vertical-align: top;
 }
 .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
   font-size: 96px;
@@ -230,137 +227,221 @@ li {
   transition: 0.3s;
   font-family: "Montserrat-Bold";
   text-shadow: 0px 4px 10px rgba(62, 61, 61, 0.25);
-  position: re;
-}
-.wrapper > .section01 {
-  width: 100%;
-  padding-top: 125px;
-  padding-bottom: 80px;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 {
-  max-width: 95.2%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
-  width: 46.1%;
-  position: relative;
 }
 
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .photo > img {
-  width: 100%;
-  height: 100%;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box {
-  width: 92.7%;
-  height: 537px;
-  background-color: #aee2ff;
-  position: relative;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box::after {
-  content: "";
-  width: 364px;
-  height: 465px;
-  background-color: #fdd;
+.wrapper > .section-bg > .scrollDowm{
   position: absolute;
-  top: 50%;
-  right: -5%;
-  transform: translateY(-50%);
-  background-image: url(../img/프사.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  left : 50%;
+  transform: translateX(-50%);
+  bottom : 2%;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box {
-  width: 846px;
-  padding-top: 74px;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt {
-  width: 50%;
-  height: 537px;
-}
-
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt .title-box {
+.wrapper > .section-bg > .scrollDowm > .field{
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt .title-box > .txt-title {
-  font-size: 24px;
-  color: #545454;
-  font-family: "Montserrat-Semibold";
+.wrapper > .section-bg > .scrollDowm > .field > .mouse{
+  width: 26px;
+  height: 50px;
+  border : 2px solid #d5d5ff;
+  border-radius: 60px;
+  position: relative;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt .semi-title {
-  font-size: 18px;
-  margin-top: 20px;
-  width: 30%;
-  color: #545454;
-  font-family: "NotoSansKR-Medium";
+.wrapper > .section-bg > .scrollDowm > .field > .mouse::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius:50%;
+  background-color: #fff;
+  position: absolute;
+  top : 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  animation: wheel 2.5s infinite;
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt p {
-  margin-bottom: 14px;
+@keyframes wheel{
+    0% {
+      top : 8px;
+    }
+    50% {
+
+    }
+  
+    100% {
+      top : 70%;
+      opacity: 0;
+    }
 }
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt .content {
-  font-size: 18px;
-  margin-top: 20px;
-  color: #545454;
-  font-family: "NotoSansKR-Medium";
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt > .box1 {
-  width: 100%;
-}
-.wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt > .box2 {
-  width: 100%;
-  margin-top: 50px;
+.wrapper > .section-bg > .scrollDowm > p{
+  text-align: center;
+  color : #d5d5ff;
+  margin-top: 10px;
 }
 
+/* section01 about 프로필 */
+.wrapper > .section01 > .con{
+  max-width: 1520px;
+}
+.wrapper > .section01 > .con > .box{
+  width: 50%;
+}
+.wrapper > .section01 > .con > .left-box{
+  margin-top: 40px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box{
+  margin-bottom: 70px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box{
+  display: flex;
+  gap: 22px;
+  font-family: "Montserrat-Bold";
+  font-size: 32px;
+  align-items: center;
+  padding-right: 45px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .circle{
+  width: 20px;
+  height: 20px;
+  border: 5px solid #333333;
+  border-radius: 999px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .semi-title{
+  width: 130px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .txt{
+  padding-left: 66px;
+  border-left: 3px solid #333333;
+  font-size: 18px;
+
+}
+
+.wrapper > .section01 > .con > .left-box > .content-box:nth-child(3) > .txt{
+  padding-top: 1.6%;
+  padding-bottom: 1.6%;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .txt > dl{
+  display: table;
+  margin-bottom: 6px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .txt > dl > dt{
+  display: table-cell;
+  width: 140px;
+  padding-right: 24px;
+}
+.wrapper > .section01 > .con > .left-box > .content-box > .txt > dl > dd{
+  display: table-cell;
+}
+.wrapper > .section01 > .con > .right-box{
+  /* background-color: #ccf; */
+}
+.wrapper > .section01 > .con > .right-box > .txt-box{
+  text-align: right;
+}
+.wrapper > .section01 > .con > .right-box > .txt-box > p{
+  font-size: 36px;
+}
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(1){
+  font-size: 96px;
+  line-height: 109px;
+}
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(3) > span{
+  position: relative;
+}
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(3) > span::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-color: #aee2ff;
+  top : 35%;
+  left : 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(5){
+  font-size: 48px;
+}
+
+
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(5) > span{
+
+  position: relative;
+}
+.wrapper > .section01 > .con > .right-box > .txt-box > p:nth-child(5) > span::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-color: #E5E793;
+  top : 40%;
+  left : 0;
+  z-index: -1;
+}
+.wrapper > .section01 > .con > .right-box > .img-box{
+  max-width: 611px;
+  margin-top: 100px;
+}
+.wrapper > .section01 > .con > .right-box > img{
+  width: 100%;
+}
+
+/* section02 POSIBILITY */
 .wrapper > .section02 {
   margin-top: 50px;
 }
-.wrapper > .section02 > .con {
+.wrapper > .section02 > .con > .posibility-wrap{
   display: flex;
   font-family: "NotoSansKR-Regular";
   padding: 42px 0;
 }
-.wrapper > .section02 > .con > .left-box {
+.wrapper > .section02 > .con > .title{
+  font-size: 24px;
+  color : #333;
+  font-family: "Montserrat-Bold";
+  padding: 0;
+  letter-spacing: -0.055em;
+}
+.wrapper > .section02 > .con > .posibility-wrap > .left-box {
   width: 35%;
   display: flex;
   align-items: center;
   color: #93c6e7;
 }
-.wrapper > .section02 > .con > .left-box > .title-box {
+.wrapper > .section02 > .con >.posibility-wrap > .left-box > .title-box {
   width: 100%;
   height: 470px;
   border-right: 5px solid #93c6e7;
   display: flex;
   align-items: center;
 }
-.wrapper > .section02 > .con > .left-box > .title-box > .title1 {
+.wrapper > .section02 > .con >.posibility-wrap > .left-box > .title-box > .title1 {
   padding-left: 0;
 }
 
-.wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(1) {
+.wrapper > .section02 > .con >.posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(1) {
   font-size: 32px;
 }
-.wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(2) {
+.wrapper > .section02 > .con >.posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(2) {
   font-size: 48px;
   font-weight: bold;
   margin-top: 14px;
 }
 
-.wrapper > .section02 > .con > .left-box > .title-box {
+.wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box {
 }
-.wrapper > .section02 > .con > .right-box {
+.wrapper > .section02 > .con > .posibility-wrap > .right-box {
   width: 65%;
 }
 
-.wrapper > .section02 > .con > .right-box > .content {
+.wrapper > .section02 > .con > .posibility-wrap > .right-box > .content {
   height: 25%;
   padding-left: 35px;
   margin-bottom: 8px;
 }
-.wrapper > .section02 > .con > .right-box > .content > .title-box {
+.wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box {
   font-size: 26px;
   margin-bottom: 5px;
   position: relative;
@@ -368,7 +449,7 @@ li {
   font-weight: bold;
 }
 
-.wrapper > .section02 > .con > .right-box > .content > .title-box::after {
+.wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box::after {
   content: "";
   width: 100%;
   height: 60%;
@@ -378,7 +459,7 @@ li {
   left: 0;
   z-index: -1;
 }
-.wrapper > .section02 > .con > .right-box > .content > .txt {
+.wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .txt {
   font-size: 14px;
 }
 .wrapper > .section03 {
@@ -386,6 +467,14 @@ li {
 }
 
 /* 수정 후 SKILL 섹션 */
+.wrapper > .section03 > .con > .title{
+  font-size: 24px;
+  color : #333;
+  font-family: "Montserrat-Bold";
+  padding: 0;
+  letter-spacing: -0.055em;
+
+}
 .wrapper > .section03 > .con > .content-wrap {
   display: flex;
   justify-content: space-between;
@@ -524,15 +613,17 @@ li {
 }
 
 
-
-.wrapper > .section04 {
+/*수정 전 포트폴리오 */
+/* .wrapper > .section04 {
   background-color: #f5f5f5;
   width: 100%;
   margin-top: 150px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.wrapper > .section04 > .title{
+  margin-bottom: 40px;
+}
 .wrapper > .section04 > .content {
   max-width: 1080px;
   height: 479px;
@@ -607,8 +698,124 @@ li {
   display: inline-block;
   margin-top: 10px;
   color: #93c6e7;
+} */
+
+/* 수정 후 포트폴리오 */
+.wrapper > .section04{
+  padding-top: 120px;
 }
-.wrapper > .section05 {
+.wrapper > .section04 > .con > .title{
+  font-size: 40px;
+  color: #333333;
+  font-family: 'Montserrat-Bold';
+  text-align: center;
+  letter-spacing: -0.055em;
+}
+.swiper-box-1{  
+  padding-top: 0px;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper{
+  padding-top: 10px;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide {
+  height:649px;
+  overflow: hidden;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box{
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > img{
+  width: 100%;
+  height: 100%;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box:hover > img{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top : 0;
+  left : 0;
+  opacity: 1;
+  transition: 0.3s;
+  box-sizing: border-box;
+  padding : 40px 20px;
+  color : #333;
+}
+
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box.active{
+  background-color: #aee2ff;
+  opacity: 0.6;
+  color : #fff;
+  overflow: hidden;
+}
+
+
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box > .txt-box{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box > .txt-box > .num{
+  font-size: 40px;
+  font-family: 'Montserrat-Bold';
+
+
+}
+.swiper-box-1 >.swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box > .txt-box > .title{
+  font-size: 20px;
+  font-family: 'Montserrat-Medium';
+}
+
+.swiper-button-box{
+  width: 200px;
+  height: 90px;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.swiper-button-box > .swiper-button-prev{
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/mdi_navigate-prev.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top : 50%;
+  left : 25%;
+
+}
+.swiper-button-box > .swiper-button-prev::after{
+  display: none;
+}
+.swiper-button-box > .swiper-button-next{
+
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/mdi_navigate-next.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top : 50%;
+  right : 25%;
+}
+.swiper-button-box > .swiper-button-next::after{
+  display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+
+}
+
+/* section05 MyWork 수정 전*/
+/* .wrapper > .section05 {
   background-color: #000000;
   padding-top: 50px;
   padding-bottom: 90px;
@@ -676,12 +883,49 @@ li {
   gap: 15px;
   font-size: 16px;
   align-items: center;
+} */
+
+.wrapper > .section05{
+  padding-top: 100px;
+}
+.wrapper > .section05 > .con > .title{
+  font-size: 40px;
+  letter-spacing: -0.055em;
+  text-align: center;
+  font-family: 'Montserrat-Bold';
+} 
+.wrapper > .section05 > .con > .content-wrap{
+  max-width: 1200px;
+  height: 750px;
+  background-color: #cdf;
+}
+.wrapper > .section05 > .con > .content-wrap > img{
+  width: 100%;
+  height: 100%;
 }
 
+.wrapper > .section05 > .con > .content-wrap > .content-box{
+  width: 50%;
+  height: 50%;
+}
+.wrapper > .section05 > .con > .content-wrap > .content-box:nth-child(1){
+  background-color: #ccd;
+}
+.wrapper > .section05 > .con > .content-wrap > .content-box:nth-child(2){
+  background-color: #dda;
+}
+.wrapper > .section05 > .con > .content-wrap > .content-box:nth-child(3){
+  background-color: #dfa;
+}
+.wrapper > .section05 > .con > .content-wrap > .content-box:nth-child(4){
+  background-color: #cda;
+}
+
+
+/* section06 Contact */
 .wrapper > .section06 {
   position: relative;
   width: 100%;
-  height: 1169px;
   background-image: url(../img/contact.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -788,6 +1032,7 @@ li {
   width: 100%;
   text-align: center;
   margin-top: 108px;
+  padding-bottom: 50px;
 }
 .wrapper > .section06 > .footer > .con > .img-box {
   display: inline-block;
@@ -819,6 +1064,11 @@ li {
 
 /* 1440px 이하 */
 @media screen and (max-width: 1440px) {
+  .section .title {
+    font-size: 96px;
+    text-align: center;
+    padding: 0;
+  }
     .wrapper > .section-bg > .banner-box > .txt-box > span:nth-child(1) {
       font-size: 64px;
       margin-right: 40px;
@@ -830,19 +1080,19 @@ li {
   .wrapper > .section02 > .con {
     max-width: 1080px;
   }
-  .wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(1) {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(1) {
     font-size: 24px;
   }
-  .wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(2) {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(2) {
     font-size: 36px;
     font-weight: bold;
     margin-top: 14px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .title-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box {
     font-size: 24px;
     margin-bottom: 15px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .txt {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .txt {
     font-size: 13px;
   }
 
@@ -890,7 +1140,9 @@ li {
 
 
 
-
+  .wrapper > .section04 > .title{
+    margin-bottom: 20px;
+  }
   .wrapper > .section04 > .content {
     width: 908px;
     height: 403px;
@@ -1015,6 +1267,11 @@ li {
 
 /* 1224px 이하 */
 @media screen and (max-width: 1224px) {
+  .section .title {
+    font-size: 64px;
+    text-align: center;
+    padding: 0;
+  }
   .wrapper > .top-bar > .con > .nav-box > ul {
     font-size: 18px;
   }
@@ -1026,68 +1283,45 @@ li {
     font-size: 64px;
     margin-left: 30px;
   }
-
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box {
-    width: 100%;
-  }
-
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box {
-    width: 100%;
-    background-color: #fff;
-  }
-
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box::after {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt {
-    padding-left: 60px;
-  }
   .wrapper > .section-bg > .banner-box > .txt-box::after {
     font-size: 14px;
   }
 
-  .section .title {
-    font-size: 96px;
-    text-align: center;
-    padding: 0;
-  }
-  .wrapper > .section02 > .con {
+
+  .wrapper > .section02 > .con > .posibility-wrap{
     flex-direction: column;
     max-width: 769px;
   }
 
-  .wrapper > .section02 > .con > .left-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box {
     width: 100%;
   }
-  .wrapper > .section02 > .con > .left-box > .title-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box {
     border-right: none;
     padding-left: 30px;
   }
-  .wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(1) {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(1) {
     font-size: 28px;
   }
-  .wrapper > .section02 > .con > .left-box > .title-box > .title1 > p:nth-child(2) {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box > .title1 > p:nth-child(2) {
     font-size: 40px;
   }
-  .wrapper > .section02 > .con > .right-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box {
     width: 100%;
   }
 
-  .wrapper > .section02 > .con > .left-box > .title-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box {
     height: auto;
     padding-bottom: 30px;
   }
-  .wrapper > .section02 > .con > .right-box > .content {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content {
     padding: 30px 35px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .title-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box {
     font-size: 26px;
     margin-bottom: 15px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .txt {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .txt {
     font-size: 14px;
   }
 
@@ -1148,7 +1382,9 @@ li {
 
 
 
-
+  .wrapper > .section04 > .title{
+    margin-bottom: 20px;
+  }
 
   .wrapper > .section04 > .content {
     width: 738px;
@@ -1279,7 +1515,7 @@ li {
 /* 769px 이하 */
 @media screen and (max-width: 769px) {
   .section .title {
-    font-size: 64px;
+    font-size: 48px;
   }
   .wrapper > .top-bar {
     height: 60px;
@@ -1302,43 +1538,29 @@ li {
     font-size: 48px;
     margin-left: 15px;
   }
-  .wrapper > .section01 {
-    padding-bottom: 0;
+  .wrapper > .section-bg > .scrollDowm{
+    display: none;
   }
 
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box {
-    height: 300px;
-  }
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .photo-box > .blue-box::after {
-    width: 182px;
-    height: 233px;
-  }
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box {
-    padding-top: 0;
-  }
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt {
-    width: 100%;
-    padding: 0px 150px;
-    height: 400px;
-  }
-  .wrapper > .section01 > .about-wrap > .max-width-1560 > .txt-box > .txt > .box {
-    margin-top: 25px;
-  }
-  .wrapper > .section02 > .con > .left-box > .title-box {
+
+  .wrapper > .section02 > .con > .posibility-wrap > .left-box > .title-box {
     padding-left: 50px;
   }
-  .wrapper > .section02 > .con > .right-box > .content {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content {
     padding-left: 50px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .title-box {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  .wrapper > .section02 > .con > .right-box > .content > .txt {
+  .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .txt {
     font-size: 12px;
   }
 
   
+  .wrapper > .section03{
+    margin-top: 75px;
+  }
   .section03 > .con{
     max-width: 494px;
   }
@@ -1380,10 +1602,14 @@ li {
   }
 
 
+  .wrapper > .section04 > .title{
+    margin-bottom: 20px;
+  }
   .wrapper > .section04 > .content {
     width: 550px;
     height: 222px;
     margin-bottom: 70px;
+    
   }
 
   .wrapper > .section04 > .content > .img-box {

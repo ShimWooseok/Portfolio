@@ -18,62 +18,76 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>포폴</title>
 
-    <!-- 제이쿼리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포폴</title>
 
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- circle-progress 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- 테일윈드 -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- circle-progress 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
-    <!-- 구글폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- 테일윈드 -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./java.js"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="top-bar">
-        <div class="con">
-          <div class="img-box">
-            <img src="./img/Logo.png" alt="" />
-          </div>
-          <div class="nav-box">
-            <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./java.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <div class="con">
+        <div class="img-box text-[40px] text-[#aee2ff] font-bold">
+          <!-- <img src="./img/Logo.png" alt="" /> -->
+          WS
+        </div>
+        <div class="nav-box">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <!-- 메인 배너 배경 -->
-      <div class="section-bg">
-        <video class="video-test" autoplay loop muted>
-          <source src="./video/fly2.mp4" />
-        </video>
-        <div class="banner-box">
-          <div class="txt-box">
-            <span>always</span>
-            <span>Try</span>
+    </div>
+    <!-- 메인 배너 배경 -->
+    <div class="section-bg">
+      <video class="video-test" autoplay loop muted>
+        <source src="./video/sky.mp4" />
+      </video>
+      <div class="banner-box">
+        <!-- <div class="txt-box">
+          <span>always</span>
+          <span>Try</span>
+        </div> -->
+
+      </div>
+      <div class="scrollDowm">
+        <div class="field">
+          <div class="mouse">
+
           </div>
         </div>
+        <p class="scroll">
+          Scroll Down
+        </p>
       </div>
-      <!-- about -->
-      <div class="section section01">
+    </div>
+    <!-- about 수정 전-->
+    <!-- <div class="section section01">
         <div class="about-wrap">
           <div class="title">
             <p>ABOUT</p>
@@ -158,10 +172,109 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+    <!-- about 수정 후-->
+    <div class="section section01 mt-[100px]">
+      <div class="con  row">
+        <div class="box left-box cell ">
+          <div class="content-box row">
+            <div class="semi-title-box cell">
+              <div class="circle"></div>
+              <div class="semi-title">
+                Profile
+              </div>
+            </div>
+            <div class="txt cell">
+              <dl>
+                <dt>이름</dt>
+                <dd>심우석</dd>
+              </dl>
+              <dl>
+                <dt>생년월일</dt>
+                <dd>1997 . 12 . 13</dd>
+              </dl>
+              <dl>
+                <dt>지역</dt>
+                <dd>대전광역시 서구 갈마동</dd>
+              </dl>
+              <dl>
+                <dt>Tel</dt>
+                <dd>010 - 3847 - 8914</dd>
+              </dl>
+              <dl>
+                <dt>E - mail</dt>
+                <dd>zaqplm7913@naver.com</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="content-box row">
+            <div class="semi-title-box cell">
+              <div class="circle"></div>
+              <div class="semi-title">
+                License
+              </div>
+            </div>
+            <div class="txt cell">
+              <dl>
+                <dt>2016. 03. 29</dt>
+                <dd>1종보통 운전면허증</dd>
+              </dl>
+              <dl>
+                <dt>2021. 03. 15</dt>
+                <dd>ITQ OA MASTER</dd>
+              </dl>
+              <dl>
+                <dt>2021. 07. 30</dt>
+                <dd>컴퓨터활용능력 2급</dd>
+              </dl>
+              <dl>
+                <dt>2022. 09. 21</dt>
+                <dd>웹디자인 기능사 필기</dd>
+              </dl>
+
+            </div>
+          </div>
+          <div class="content-box row">
+            <div class="semi-title-box cell">
+              <div class="circle"></div>
+              <div class="semi-title">
+                History
+              </div>
+            </div>
+            <div class="txt cell">
+              <dl>
+                <dt>2021. 12. 04</dt>
+                <dd>SBS아카데미컴퓨터아트학원</dd>
+              </dl>
+            </div>
+          </div>
+          
+        </div>
+        <div class="box right-box cell-r ">
+          <div class="txt-box">
+            <p></p>
+            <p>안녕하세요</p>
+            <p><span>기획력, 협동심, 스피드</span></p>
+            <p>그리고 도전정신을 가진 웹 개발자</p>
+            <p><span>심우석</span>입니다.</p>
+          </div>
+          <div class="img-box cell-r">
+            <img src="./img/section01_profile.png" alt="">
+          </div>
+        </div>
       </div>
-      <!-- 소개 -->
-      <div class="section section02">
-        <div class="con">
+    </div>
+    
+
+
+    <!-- 소개 -->
+    <div class="section section02">
+      <div class="con">
+        <div class="title">
+          Posibility
+        </div>
+        <div class="posibility-wrap">
           <div class="left-box">
             <div class="title-box">
               <div class="title1">
@@ -201,341 +314,440 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 스킬 -->
-      <div class="section section03">
-        <div class="title">SKILL</div>
-        <div class="con">
-          <div class="content-wrap">
-            <div class="img-box">
-              <img src="./img/프사2.png" alt="" />
-            </div>
-            <div class="content-box">
-              <div class="content">
-                <div class="icon">
-                  <img src="./img/포토샵 아이콘.png" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="title-box">Photoshop</div>
-                  <ul class="skill">
-                    <li class="flex">
-                      <div class="progress-bar-box progress-bar-box-75"></div>
-                      <span class="progress-num-75"></span>
-                    </li>
-                  </ul>
-                  <div class="txt">
-                    <p>간단한 이미지 합성과 인물 보정, 편집작업</p>                  
-                  </div>
-                </div>
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <img src="./img/일러스트 아이콘.png" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="title-box">Illustlator</div>
-                  <ul class="skill">
-                    <li class="flex">
-                      <div class="progress-bar-box progress-bar-box-75"></div>
-                      <span class="progress-num-75"></span>
-                    </li>
-                  </ul>
-                  <div class="txt">펜툴을 활용해 원하는 일러스트 제작</div>
-                </div>
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <img src="./img/vsCode아이콘.png" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="title-box">Visual Studio Code</div>
-                  <ul class="skill">
-                    <li class="flex">
-                      <div class="progress-bar-box progress-bar-box-90"></div>
-                      <span class="progress-num-90"></span>
-                    </li>
-                  </ul>
-                  <div class="txt">
-                    <p>간단한 이미지 합성과 인물 보정, 편집작업</p>   
-                  </div>
-                </div>
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <img src="./img/피그마 아이콘.png" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="title-box">Figma</div>
-                  <ul class="skill">
-                    <li class="flex">
-                      <div class="progress-bar-box progress-bar-box-90"></div>
-                      <span class="progress-num-90"></span>
-                    </li>
-                  </ul>
-                  <div class="txt">
-                    <p>간단한 이미지 합성과 인물 보정, 편집작업</p>   
-                  </div>
-                </div>
-              </div>
-              <div class="content">
-                <div class="icon">
-                  <img src="./img/인디자인아이콘.png" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="title-box">InDesign</div>
-                  <ul class="skill">
-                    <li class="flex">
-                      <div class="progress-bar-box progress-bar-box-50"></div>
-                      <span class="progress-num-50"></span>
-                    </li>
-                  </ul>
-                  <div class="txt">
-                    <p>간단한 이미지 합성과 인물 보정, 편집작업</p>   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 포트폴리오 -->
-      <div class="section section04">
-        <div class="title">PORTFOLIO</div>
-        <div class="content">
-          <div class="img-box">
-            <img src="./img/루헨스이미지.png" alt="" />
-          </div>
-          <div class="txt-box">
-            <div class="title-box">루헨스 리디자인</div>
-            <div class="txt">
-              <p>방문자의 편의성을 고려해 더 많은 컨텐츠들과 브랜드의 이미지를</p>
-              <p>노출시키는 것을 중점을 두어 제작하였습니다.</p>
-            </div>
-            <div class="info-box">
-              <div class="semi-title">
-                <p>사용툴</p>
-                <p>참여율</p>
-                <p>제작기간</p>
-              </div>
-              <div class="semi-txt">
-                <p>Figma, Photoshop, VsCode</p>
-                <p>100%</p>
-                <p>2022.09</p>
-              </div>
-            </div>
-            <a href="#">
-              <div class="btn-box">Design View</div>
-            </a>
-          </div>
-        </div>
-        <div class="content">
-          <div class="img-box">
-            <img src="./img/제주패스이미지.png" alt="" />
-          </div>
-          <div class="txt-box">
-            <div class="title-box">제주패스 리디자인</div>
-            <div class="txt">
-              <p>방문자의 편의성을 고려해 더 많은 컨텐츠들과 브랜드의 이미지를</p>
-              <p>노출시키는 것을 중점을 두어 제작하였습니다.</p>
-            </div>
-            <div class="info-box">
-              <div class="semi-title">
-                <p>사용툴</p>
-                <p>참여율</p>
-                <p>제작기간</p>
-              </div>
-              <div class="semi-txt">
-                <p>Figma, Photoshop, VsCode</p>
-                <p>100%</p>
-                <p>2022.10</p>
-              </div>
-            </div>
-            <a href="#">
-              <div class="btn-box">Design View</div>
-            </a>
-          </div>
-        </div>
-        <div class="content">
-          <div class="img-box">
-            <img src="./img/벼룩시장이미지.png" alt="" />
-          </div>
-          <div class="txt-box row">
-            <div class="title-box">벼룩시장 리디자인</div>
-            <div class="txt">
-              <p>이용자의 불편사항과 건의사항을 바탕으로 편의성을 개선하여</p>
-              <p>새롭게 리뉴얼하였습니다.</p>
-            </div>
-            <div class="info-box">
-              <div class="semi-title">
-                <p>사용툴</p>
-                <p>참여율</p>
-                <p>제작기간</p>
-              </div>
-              <div class="semi-txt">
-                <p>Figma</p>
-                <p>100%</p>
-                <p>2022.10</p>
-              </div>
-            </div>
-            <a class="cell" href="#">
-              <div class="btn-box">Design View</div>
-            </a>
-            <a class="cell ml-[5px]" href="#">
-              <div class="btn-box">Process View</div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 클론코딩 -->
-      <div class="section section05">
-        <div class="title">CLONE CODING</div>
-        <div class="swiper-box-1">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img-box">
-                    <img src="./img/NH이미지.png" alt="" />
-                  </div>
-                  <div class="txt-box">
-                    <div class="title-box">
-                      <span>NH Bank</span>
-                    </div>
-                    <div class="info-box">
-                      <div class="semi-title">
-                        <p>작업</p>
-                        <p>참여율</p>
-                        <p>제작기간</p>
-                      </div>
-                      <div class="semi-txt">
-                        <p>메인페이지 모작</p>
-                        <p>100%</p>
-                        <p>2022.05</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img-box">
-                    <img src="./img/집반찬연구소이미지.png" alt="" />
-                  </div>
-                  <div class="txt-box">
-                    <div class="title-box">집반찬연구소</div>
-                    <div class="info-box">
-                      <div class="semi-title">
-                        <p>작업</p>
-                        <p>참여율</p>
-                        <p>제작기간</p>
-                      </div>
-                      <div class="semi-txt">
-                        <p>메인페이지 모작</p>
-                        <p>100%</p>
-                        <p>2022.11</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img-box">
-                    <img src="./img/롯데시네마이미지.png" alt="" />
-                  </div>
-                  <div class="txt-box">
-                    <div class="title-box">롯데시네마</div>
-                    <div class="info-box">
-                      <div class="semi-title">
-                        <p>작업</p>
-                        <p>참여율</p>
-                        <p>제작기간</p>
-                      </div>
-                      <div class="semi-txt">
-                        <p>메인페이지 모작</p>
-                        <p>100%</p>
-                        <p>2022.12</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="w-[100%] h-[100%]" href="#">
-                  <div class="img-box">
-                    <img src="./img/Log이미지.png" alt="" />
-                  </div>
-                  <div class="txt-box">
-                    <div class="title-box">
-                      <span>CLONE CODING LOG</span>
-                    </div>
-                    <div class="info-box">
-                      <div class="semi-title">
-                        <p>작업</p>
-                        <p>참여율</p>
-                        <p>제작기간</p>
-                      </div>
-                      <div class="semi-txt">
-                        <p>메인페이지 모작</p>
-                        <p>100%</p>
-                        <p>2022.05</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- contact -->
-      <div class="section section06">
-        <div class="contact">
-          <div class="title-box">CONTACT</div>
-          <div class="info-box">
-            <div class="input-box">
-              <form action="">
-                <input type="text" placeholder="put your name address here" data-error="이름을 입력하세요" required /> 
-                <input type="text" placeholder="put your E-mail address here" data-error="이메일을 입력하세요" required />
-                <textarea class="form-control" name="message" id="form_message" placeholder="text" data-error="내용을 적어주세요!" required></textarea>
-                <button>보내기</button>
-              </form>
-            </div>
-            <div class="txt-box">
-              <div class="email">
-                <img src="./img/이메일아이콘.png" alt="" />
-                <p>zaqplm7913@naver.com</p>
-              </div>
-              <div class="phone">
-                <img src="./img/휴대폰아이콘.png" alt="" />
-                <p>010 - 3847 - 8914</p>
-              </div>
-              <img src="./img/circle-img.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="con">
-            <p class="mb-[12px]">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
-            <div class="img-box mb-[12px]">
-              <img src="./img/git이미지.png" alt="" />
-            </div>
-            <p>© 2023 WooSeok. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="top-btn">
-        <!-- <img src="./img/top-btn.png" alt="" /> -->
-        TOP
       </div>
     </div>
-  </body>
+
+    <!-- 스킬 -->
+    <div class="section section03">
+      <div class="con">
+        <div class="title">
+          Skill
+        </div>
+        <div class="content-wrap">
+          <div class="img-box">
+            <img src="./img/프사2.png" alt="" />
+          </div>
+          <div class="content-box">
+            <div class="content">
+              <div class="icon">
+                <img src="./img/포토샵 아이콘.png" alt="" />
+              </div>
+              <div class="progress">
+                <div class="title-box">Photoshop</div>
+                <ul class="skill">
+                  <li class="flex">
+                    <div class="progress-bar-box progress-bar-box-75"></div>
+                    <span class="progress-num-75"></span>
+                  </li>
+                </ul>
+                <div class="txt">
+                  <p>간단한 이미지 합성과 인물 보정, 편집작업</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <img src="./img/일러스트 아이콘.png" alt="" />
+              </div>
+              <div class="progress">
+                <div class="title-box">Illustlator</div>
+                <ul class="skill">
+                  <li class="flex">
+                    <div class="progress-bar-box progress-bar-box-75"></div>
+                    <span class="progress-num-75"></span>
+                  </li>
+                </ul>
+                <div class="txt">펜툴을 활용해 원하는 일러스트 제작</div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <img src="./img/vsCode아이콘.png" alt="" />
+              </div>
+              <div class="progress">
+                <div class="title-box">Visual Studio Code</div>
+                <ul class="skill">
+                  <li class="flex">
+                    <div class="progress-bar-box progress-bar-box-90"></div>
+                    <span class="progress-num-90"></span>
+                  </li>
+                </ul>
+                <div class="txt">
+                  <p>간단한 이미지 합성과 인물 보정, 편집작업</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <img src="./img/피그마 아이콘.png" alt="" />
+              </div>
+              <div class="progress">
+                <div class="title-box">Figma</div>
+                <ul class="skill">
+                  <li class="flex">
+                    <div class="progress-bar-box progress-bar-box-90"></div>
+                    <span class="progress-num-90"></span>
+                  </li>
+                </ul>
+                <div class="txt">
+                  <p>간단한 이미지 합성과 인물 보정, 편집작업</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <img src="./img/인디자인아이콘.png" alt="" />
+              </div>
+              <div class="progress">
+                <div class="title-box">InDesign</div>
+                <ul class="skill">
+                  <li class="flex">
+                    <div class="progress-bar-box progress-bar-box-50"></div>
+                    <span class="progress-num-50"></span>
+                  </li>
+                </ul>
+                <div class="txt">
+                  <p>간단한 이미지 합성과 인물 보정, 편집작업</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 포트폴리오 수정 전 -->
+    <!-- <div class="section section04">
+      <div class="title">PORTFOLIO</div>
+      <div class="content">
+        <div class="img-box">
+          <img src="./img/루헨스이미지.png" alt="" />
+        </div>
+        <div class="txt-box">
+          <div class="title-box">루헨스 리디자인</div>
+          <div class="txt">
+            <p>방문자의 편의성을 고려해 더 많은 컨텐츠들과 브랜드의 이미지를</p>
+            <p>노출시키는 것을 중점을 두어 제작하였습니다.</p>
+          </div>
+          <div class="info-box">
+            <div class="semi-title">
+              <p>사용툴</p>
+              <p>참여율</p>
+              <p>제작기간</p>
+            </div>
+            <div class="semi-txt">
+              <p>Figma, Photoshop, VsCode</p>
+              <p>100%</p>
+              <p>2022.09</p>
+            </div>
+          </div>
+          <a href="#">
+            <div class="btn-box">Design View</div>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="img-box">
+          <img src="./img/제주패스이미지.png" alt="" />
+        </div>
+        <div class="txt-box">
+          <div class="title-box">제주패스 리디자인</div>
+          <div class="txt">
+            <p>방문자의 편의성을 고려해 더 많은 컨텐츠들과 브랜드의 이미지를</p>
+            <p>노출시키는 것을 중점을 두어 제작하였습니다.</p>
+          </div>
+          <div class="info-box">
+            <div class="semi-title">
+              <p>사용툴</p>
+              <p>참여율</p>
+              <p>제작기간</p>
+            </div>
+            <div class="semi-txt">
+              <p>Figma, Photoshop, VsCode</p>
+              <p>100%</p>
+              <p>2022.10</p>
+            </div>
+          </div>
+          <a href="#">
+            <div class="btn-box">Design View</div>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="img-box">
+          <img src="./img/벼룩시장이미지.png" alt="" />
+        </div>
+        <div class="txt-box row">
+          <div class="title-box">벼룩시장 리디자인</div>
+          <div class="txt">
+            <p>이용자의 불편사항과 건의사항을 바탕으로 편의성을 개선하여</p>
+            <p>새롭게 리뉴얼하였습니다.</p>
+          </div>
+          <div class="info-box">
+            <div class="semi-title">
+              <p>사용툴</p>
+              <p>참여율</p>
+              <p>제작기간</p>
+            </div>
+            <div class="semi-txt">
+              <p>Figma</p>
+              <p>100%</p>
+              <p>2022.10</p>
+            </div>
+          </div>
+          <a class="cell" href="#">
+            <div class="btn-box">Design View</div>
+          </a>
+          <a class="cell ml-[5px]" href="#">
+            <div class="btn-box">Process View</div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 포트폴리오 수정 후 -->
+    <div class="section section04">
+      <div class="con">
+        <div class="title">
+          Portfolio
+        </div>
+        <div class="swiper-box-1">
+          <div class="swiper">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-box row">
+              <div class="btn swiper-button-prev cell"></div>
+              <div class="btn swiper-button-next cell"></div>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide01">
+                <div class="img-box">
+                  <img src="./img/루헨스.png" alt="">
+                  <div class="slide-after-box ">
+                    <div class="txt-box">
+                      <div class="num">01</div>
+                      <div class="title">Web Renewal</div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide02">
+                <div class="img-box">
+                  <img src="./img/제주패스.png" alt="">
+                  <div class="slide-after-box ">
+                    <div class="txt-box">
+                      <div class="num">02</div>
+                      <div class="title">Web Renewal</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide03">
+                <div class="img-box">
+                  <img src="./img/벼룩시장.png" alt="">
+                  <div class="slide-after-box ">
+                    <div class="txt-box">
+                      <div class="num">03</div>
+                      <div class="title">App Renewal</div>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide04">
+                <div class="img-box">
+                  <img src="./img/클론코딩LOG.png" alt="">
+                  <div class="slide-after-box ">
+                    <div class="txt-box">
+                      <div class="num">04</div>
+                      <div class="title">Clone Coding</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mywork 수정 전 -->
+    <!-- <div class="section section05">
+      <div class="title">MY WORK</div>
+      <div class="swiper-box-1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img-box">
+                  <img src="./img/NH이미지.png" alt="" />
+                </div>
+                <div class="txt-box">
+                  <div class="title-box">
+                    <span>NH Bank</span>
+                  </div>
+                  <div class="info-box">
+                    <div class="semi-title">
+                      <p>작업</p>
+                      <p>참여율</p>
+                      <p>제작기간</p>
+                    </div>
+                    <div class="semi-txt">
+                      <p>메인페이지 모작</p>
+                      <p>100%</p>
+                      <p>2022.05</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img-box">
+                  <img src="./img/집반찬연구소이미지.png" alt="" />
+                </div>
+                <div class="txt-box">
+                  <div class="title-box">집반찬연구소</div>
+                  <div class="info-box">
+                    <div class="semi-title">
+                      <p>작업</p>
+                      <p>참여율</p>
+                      <p>제작기간</p>
+                    </div>
+                    <div class="semi-txt">
+                      <p>메인페이지 모작</p>
+                      <p>100%</p>
+                      <p>2022.11</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img-box">
+                  <img src="./img/롯데시네마이미지.png" alt="" />
+                </div>
+                <div class="txt-box">
+                  <div class="title-box">롯데시네마</div>
+                  <div class="info-box">
+                    <div class="semi-title">
+                      <p>작업</p>
+                      <p>참여율</p>
+                      <p>제작기간</p>
+                    </div>
+                    <div class="semi-txt">
+                      <p>메인페이지 모작</p>
+                      <p>100%</p>
+                      <p>2022.12</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="w-[100%] h-[100%]" href="#">
+                <div class="img-box">
+                  <img src="./img/Log이미지.png" alt="" />
+                </div>
+                <div class="txt-box">
+                  <div class="title-box">
+                    <span>CLONE CODING LOG</span>
+                  </div>
+                  <div class="info-box">
+                    <div class="semi-title">
+                      <p>작업</p>
+                      <p>참여율</p>
+                      <p>제작기간</p>
+                    </div>
+                    <div class="semi-txt">
+                      <p>메인페이지 모작</p>
+                      <p>100%</p>
+                      <p>2022.05</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Mywork 수정 후 -->
+    <div class="section section05">
+      <div class="con">
+        <div class="title">
+          My Work
+        </div>
+        <div class="content-wrap row">
+          <div class="content-box cell">
+            <img src="./img/농협인터넷뱅킹.png" alt="">
+          </div>
+          <div class="content-box cell">
+            <img src="./img/롯데시네마.png" alt="">
+          </div>
+          <div class="content-box cell">
+            <img src="./img/인스타그램.png" alt="">
+          </div>
+          <div class="content-box cell">
+            <img src="./img/집반찬연구솧.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="section section06">
+      <div class="contact">
+        <div class="title-box">Contcat</div>
+        <div class="info-box">
+          <div class="input-box">
+            <form action="">
+              <input type="text" placeholder="put your name address here" data-error="이름을 입력하세요" required />
+              <input type="text" placeholder="put your E-mail address here" data-error="이메일을 입력하세요" required />
+              <textarea class="form-control" name="message" id="form_message" placeholder="text" data-error="내용을 적어주세요!"
+                required></textarea>
+              <button>보내기</button>
+            </form>
+          </div>
+          <div class="txt-box">
+            <div class="email">
+              <img src="./img/이메일아이콘.png" alt="" />
+              <p>zaqplm7913@naver.com</p>
+            </div>
+            <div class="phone">
+              <img src="./img/휴대폰아이콘.png" alt="" />
+              <p>010 - 3847 - 8914</p>
+            </div>
+            <img src="./img/circle-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="con">
+          <p class="mb-[12px]">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+          <div class="img-box mb-[12px]">
+            <img src="./img/git이미지.png" alt="" />
+          </div>
+          <p>© 2023 WooSeok. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-btn">
+      <!-- <img src="./img/top-btn.png" alt="" /> -->
+      TOP
+    </div>
+  </div>
+</body>
+
 </html>

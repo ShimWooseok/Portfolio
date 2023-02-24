@@ -22,11 +22,50 @@ $(document).ready(function () {
     $(".skill").addClass("active");
   }, 1000);
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.5,
-    spaceBetween: 50,
-    freeMode: true,
+
+
+
+  // 포트폴리오 슬라이드
+    var swiper = new Swiper(".swiper-box-1 .swiper", {
+      loop:true,
+      spaceBetween: 48,
+      slidesPerView: 3,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0:{
+          slidesPerView : 1
+        },
+        600: {
+          slidesPerView: 2
+        },
+  
+        1000: {
+          slidesPerView: 3
+        },
+      },
+    });
+  $(".swiper-box-1 > .swiper > .swiper-wrapper > .swiper-slide").hover(function(){
+
+    let num = $(this).index();
+    $(".swiper-box-1 > .swiper > .swiper-wrapper > .swiper-slide > .img-box > .slide-after-box").eq(num).toggleClass("active");
   });
+
+
+
+
+
+
+
+
+
+
 });
 
 $(window).scroll(function () {
