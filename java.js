@@ -40,16 +40,16 @@ $(document).ready(function () {
       },
       breakpoints: {
         0:{
-          slidesPerView : 1
+          slidesPerView: 1
         },
         600: {
           slidesPerView: 2
         },
-  
         1000: {
           slidesPerView: 3
         },
       },
+
     });
   $(".swiper-box-1 > .swiper > .swiper-wrapper > .swiper-slide").hover(function(){
 
