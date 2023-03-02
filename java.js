@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  
+  AOS.init();
+
+  
   $(".top-btn").click(function () {
     // $("html , body").scrollTop(800)
     $("html , body").animate(
@@ -60,9 +64,12 @@ $(document).ready(function () {
 
 
 
-
-
-
+  function emailFormSubmit(form) {
+    form.querySelector('button[type="submit"]').innerHTML =
+      "이미 발송되었습니다.";
+    form.querySelector('button[type="submit"]').disabled = true;
+  }
+  
 
 
 });
