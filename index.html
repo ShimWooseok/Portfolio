@@ -41,6 +41,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- tsparticles 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
+
+
   <!-- 구글폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
@@ -67,9 +71,12 @@
     </div>
     <!-- 메인 배너 배경 -->
     <div id="home-wrap" class="section-bg">
-      <video class="video-test" autoplay loop muted>
+      <!-- <video class="video-test" autoplay loop muted>
         <source src="./video/sky.mp4" />
-      </video>
+      </video> -->
+      <div class="bg-1">
+        <!-- <img src="./img/배경후보1.jpg" alt=""> -->
+      </div>
       <div class="banner-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
         <div class="txt-box" >
           <span>ENJOY CHALLENGE</span>
@@ -183,14 +190,13 @@
     </div>
     
 
-
     <!-- 소개 -->
     <div id="podibility-wrap" class="section section02">
       <div class="con">
         <div class="title">
           Posibility
         </div>
-        <div class="posibility-wrap">
+        <div class="posibility-wrap"  data-aos="fade-up">
           <div class="left-box">
             <div class="title-box">
               <div class="title1">
@@ -200,28 +206,28 @@
             </div>
           </div>
           <div class="right-box">
-            <div class="content" data-aos="fade-up">
+            <div class="content">
               <div class="title-box">커뮤니케이션</div>
               <div class="txt">
                 <p>팀원 간 의견의 차이가 있어도 상대방을 이해하려고 노력하며 본인의 주관만이 아닌, 열린 시각으로 타인의 의견을</p>
                 <p>존중하고 수용하며 문제를 해결하려고 노력합니다. 의사소통의 장점을 살려 협업에 능숙합니다.</p>
               </div>
             </div>
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
               <div class="title-box">책임감&성실성</div>
               <div class="txt">
                 <p>학교를 다니면서 수업 지각과 작업 보고를 한번도 늦은 적이 없습니다. 그리고 주어진 일을 항상 끝내려고 노력하며</p>
                 <p>책임감과 성실성을 보였습니다..</p>
               </div>
             </div>
-            <div class="content" data-aos="fade-up" data-aos-delay="300">
+            <div class="content">
               <div class="title-box">적응력</div>
               <div class="txt">
                 <p>유년시절부터 이사와 전학을 자주 다녀 낯선 환경에서 빠르게 적응하는 방법을 일찍 터득했습니다. 새로운 친구들, 선생님,</p>
                 <p>동료들과 친해지고 어울리며 함께 살아가는것에 익숙합니다.</p>
               </div>
             </div>
-            <div class="content" data-aos="fade-up" data-aos-delay="400">
+            <div class="content">
               <div class="title-box">커뮤니케이션&팀워크</div>
               <div class="txt">
                 <p>상대방의 의견을 잘 캐치하고 존중하며 제 문제점을 개선해나가려고 능 노력합니다. 주변 사람들 같이 기획을 하고 브레인</p>
@@ -332,7 +338,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- 포트폴리오 수정 후 -->
     <div id="portfolio-wrap" class="section section04">
@@ -516,7 +521,6 @@
 
     </div>
 
-
     <!-- Mywork 수정 후 -->
     <div id="mywork-wrap" class="section section05">
       <div class="con">
@@ -526,6 +530,9 @@
         <div class="content-wrap row">
           <div class="content-box cell">
             <img src="./img/농협인터넷뱅킹.png" alt="">
+            <div class="txt-box">
+              
+            </div>
           </div>
           <div class="content-box cell">
             <img src="./img/롯데시네마.png" alt="">
