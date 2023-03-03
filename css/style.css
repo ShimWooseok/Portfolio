@@ -892,6 +892,9 @@ li {
   opacity: 0;
   transition: 0.3s;
 }
+.wrapper > .section05 > .con > .content-wrap > .content-box > .txt-box{
+  
+}
 
 .wrapper > .section05 > .con > .content-wrap > .content-box:hover::after{
   opacity: 0.7; 
