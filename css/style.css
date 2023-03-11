@@ -675,6 +675,9 @@ li {
   counter-reset: num var(--num-to-50);
 }
 
+.circle-chart{
+  display: none;
+}
 
 
 /* 수정 후 포트폴리오 */
@@ -1812,7 +1815,7 @@ li {
    /* section01 about 프로필 */
 
 .wrapper > .section01 > .con{
-  max-width: 600px;
+  max-width: 95%;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -1822,11 +1825,15 @@ li {
 .wrapper > .section01 > .con > .left-box{
   margin-top: 100px;
   float: none;
+  width: 100%;
+  margin : 0 auto;
+  background-color: #ada;
 }
 .wrapper > .section01 > .con > .left-box > .content-box{
   margin-bottom: 70px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box{
+  display: none;
   display: flex;
   gap: 22px;
   font-family: "Montserrat-Bold";
@@ -1835,17 +1842,18 @@ li {
   padding-right: 45px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .circle{
-  width: 20px;
-  height: 20px;
-  border: 5px solid #333333;
+  width: 0px;
+  height: 0px;
+  border: 0px solid #333333;
   border-radius: 999px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .semi-title{
-  width: 130px;
+  width: 0px;
+  font-size: 0;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .txt{
-  padding-left: 66px;
-  border-left: 3px solid #333333;
+  padding-left: 0px;
+  border-left: 0px solid #333333;
   font-size: 14px;
 }
 
@@ -1856,6 +1864,7 @@ li {
 .wrapper > .section01 > .con > .left-box > .content-box > .txt > dl{
   display: table;
   margin-bottom: 6px;
+  font-weight: bold;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .txt > dl > dt{
   display: table-cell;
@@ -1867,7 +1876,12 @@ li {
 }
 .wrapper > .section01 > .con > .right-box{
   /* background-color: #ccf; */
-  float : left;
+  float : none;
+  width: 100%;
+  margin : 0 auto;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .wrapper > .section01 > .con > .right-box > .txt-box{
   text-align: left;
@@ -1913,14 +1927,15 @@ li {
   z-index: -1;
 }
 .wrapper > .section01 > .con > .right-box > .img-box{
-  max-width: 30%;
-  height: auto;
+  max-width: 100%;
+  height: 250px;
+  background-color: #daf;
   margin-top: 0px;
-  float: right;
+  float: none;
+  border-radius: 10px;
 }
-.wrapper > .section01 > .con > .right-box > img{
-  width: 100%;
-  height: 20px;
+.wrapper > .section01 > .con > .right-box > .img-box > img{
+  display: none;
 }
 
 
@@ -1936,14 +1951,14 @@ li {
 
 
   .wrapper > .section02 > .con > .title{
-    max-width: 620px;
+    max-width: 95%;
     margin: 0 auto;
     font-size: 20px;
   }
 
   .wrapper > .section02 > .con > .posibility-wrap{
     flex-direction: column;
-    max-width: 620px;
+    max-width: 95%;
     margin: 0 auto;
   }
   .wrapper > .section02 > .con > .posibility-wrap > .right-box > .content > .title-box {
@@ -1956,13 +1971,14 @@ li {
 
 
   .wrapper > .section03 > .con > .title{
-    max-width: 600px;
+    max-width: 95%;
     margin: 0 auto;
     font-size: 20px;
   }
   .wrapper > .section03 > .con > .content-wrap{
-    max-width: 600px;
+    max-width: 95%;
     margin: 0 auto;
+    background-color: #dfd;
     padding-top: 20px;
   }
 
@@ -1974,6 +1990,7 @@ li {
     max-width: 100%;
     margin: 0 auto;
     float: none;
+    display: none;
   }
   .wrapper > .section03 > .con > .content-wrap > .content-box > .content{
     max-width: 100%;
@@ -1991,7 +2008,15 @@ li {
   .skill > li{
     gap: 0;
   }
-
+  .circle-chart{
+    display: block;
+    max-width: 426px;
+    height: 426px;
+    background-color: #fdf;
+    margin : 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
 
   .wrapper > .section04 > .title{
