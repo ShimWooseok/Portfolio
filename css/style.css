@@ -1818,6 +1818,7 @@ li {
   max-width: 95%;
   display: flex;
   flex-direction: column-reverse;
+  gap: 50px;
 }
 .wrapper > .section01 > .con > .box{
   width: 100%;
@@ -1827,34 +1828,35 @@ li {
   float: none;
   width: 100%;
   margin : 0 auto;
-  background-color: #ada;
+
 }
 .wrapper > .section01 > .con > .left-box > .content-box{
   margin-bottom: 70px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box{
-  display: none;
+  float: none;
   display: flex;
-  gap: 22px;
+  gap: 10px;
   font-family: "Montserrat-Bold";
   font-size: 24px;
   align-items: center;
   padding-right: 45px;
+  margin-bottom: 20px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .circle{
-  width: 0px;
-  height: 0px;
-  border: 0px solid #333333;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333333;
   border-radius: 999px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .semi-title-box > .semi-title{
-  width: 0px;
-  font-size: 0;
+  width: ;
+  font-size: 24px;
 }
 .wrapper > .section01 > .con > .left-box > .content-box > .txt{
   padding-left: 0px;
   border-left: 0px solid #333333;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .wrapper > .section01 > .con > .left-box > .content-box:nth-child(3) > .txt{
@@ -1879,13 +1881,14 @@ li {
   float : none;
   width: 100%;
   margin : 0 auto;
-  background-color: yellowgreen;
   display: flex;
   flex-direction: column-reverse;
+
 }
 .wrapper > .section01 > .con > .right-box > .txt-box{
   text-align: left;
   display: inline-block;
+  padding-top: 50px;
 }
 .wrapper > .section01 > .con > .right-box > .txt-box > p{
   font-size: 20px;
