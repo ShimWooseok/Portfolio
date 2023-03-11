@@ -148,7 +148,11 @@ li {
 }
 .wrapper > .top-bar > .con > .nav-box > ul > li > a {
   padding: 10px 0;
+  
 }
+.wrapper > .top-bar > .con > .nav-box > ul > li:hover > a{
+  color : #aee2ff;
+} 
 .wrapper > .top-bar > .con > .nav-box > ul > li.active > a {
   color: #aee2ff;
   font-family: "Montserrat-Bold";
@@ -171,6 +175,7 @@ li {
 }
 .wrapper > .top-bar > .con > .nav-box > ul > li:hover > a > span::after{
   width: 100%;
+  color : #aee2ff;
 }
 
 .wrapper > .section-bg {
@@ -360,8 +365,16 @@ li {
 .wrapper > .section01 > .con > .left-box > .content-box > .txt > dl > dd{
   display: table-cell;
 }
-.wrapper > .section01 > .con > .right-box{
-  /* background-color: #ccf; */
+
+
+
+.wrapper > .section01 > .con > .left-box > .txt-box{
+  font-size: 16px;
+  color : #141414;
+  margin-top: 120px;
+}
+.wrapper > .section01 > .con > .left-box > .txt-box > p{
+  margin-top: 5px;
 }
 .wrapper > .section01 > .con > .right-box > .txt-box{
   text-align: right;
