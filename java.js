@@ -63,6 +63,27 @@ $(document).ready(function () {
   });
 
 
+  function SwiperBox2__init() {
+    var swiper = new Swiper(".swiper-box-2 .mySwiper", {
+      effect : "fade",
+      fadeEffect: { 
+        crossFade: true 
+        },
+      loopAdditionalSlides : 1,
+      loop : true,
+      autoHeight : true,
+      autoplay: {     //자동슬라이드 (false-비활성화)
+        delay: 2500, // 시간 설정
+      },
+      allowTouchMove : false,
+    });
+  }
+
+  // SwiperBox2__init();
+
+
+
+
 
 
 
@@ -71,6 +92,28 @@ $(document).ready(function () {
       "이미 발송되었습니다.";
     form.querySelector('button[type="submit"]').disabled = true;
   }
+
+  // $(".wrapper > .top-bar > .con > button").click(function(){
+
+  //   if( $('.nav-box').css( 'display' ) == 'none' ){
+  //     $(".wrapper > .top-bar > .con > .nav-box").stop().slideDown(500);
+
+  //   }else{
+  //     $(".wrapper > .top-bar > .con > .nav-box").stop().slideUp(500);
+
+  //   }
+
+
+  // });
+
+  // $(".wrapper > .top-bar > .con > .nav-box > ul > li > a").click(function(){
+  //   $(".wrapper > .top-bar > .con > .nav-box").stop().slideUp(500);
+  // });
+
+
+
+
+
   
 
 
