@@ -121,12 +121,19 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
   let scrollTop = $(this).scrollTop();
+  console.log(scroll);
+
+  if(scrollTop > 10000) {
+    $(".skill").addClass("active");
+  }
 
   if (scrollTop >= 100) {
     $(".wrapper >.top-bar").addClass("active");
   } else if (scrollTop < 100) {
     $(".wrapper > .top-bar").removeClass("active");
   }
+
+
 
   if (scrollTop >= 600) {
     $(".top-btn").addClass("active");
